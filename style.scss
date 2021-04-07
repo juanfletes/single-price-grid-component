@@ -34,6 +34,7 @@ h3 {
 .main {
     font-size: 1.6rem;
     width: 85vw;
+    max-width: 960px;
     margin: auto;
 }
 
@@ -106,5 +107,16 @@ h3 {
         line-height: 25px;
         width: 200px;
         color: var(--dark-gray)
+    }
+}
+
+
+@media only screen and(min-width:768px){
+    .whyus, .subscription{
+        width: 50%;
+    }
+    .footer{
+        display: flex;
+        align-items: stretch;
     }
 }
