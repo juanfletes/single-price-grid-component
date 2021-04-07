@@ -1,0 +1,110 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+ box-sizing: inherit;   
+}
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsl(179, 62%, 45%);
+    --bright_yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --dark-gray: hsl(204, 43%, 88%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+body{
+    font-size: 10px;
+    font-family: Karla;
+    background-color: var(--light-gray);
+}
+
+h1, h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+.main {
+    font-size: 1.6rem;
+    width: 85vw;
+    margin: auto;
+}
+
+.wrapper {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 5px ;
+    box-shadow: 0px 0px 30px 0px var(--grayish-blue);
+    overflow: hidden;
+}
+
+.join{
+    background-color: white;
+    padding:25px;
+    h1{
+        color: var(--cyan)
+    }
+
+    h3{
+        color: var(--bright_yellow)
+    }
+
+    p{
+        font-size: 1rem;
+        color: var(--grayish-blue);
+        line-height: 25px;
+    }
+}
+
+.subscription{
+    padding:25px;
+    color: var(--light-gray);
+    background-color: var(--cyan);
+
+    &-amount{
+        vertical-align: middle;
+        span{
+            font-size: 1.3em;
+            font-weight: 700;
+        }
+        small{
+            font-size: 0.7em;
+            color: var(--dark-gray)
+        }
+    }
+
+    p{
+        font-size: 0.7em;
+    }
+    
+
+    button{
+        color: var(--light-gray);
+        background-color: var(--bright_yellow);
+        padding: 15px;
+        font-size: 0.7em;
+        width: 100%;
+        border: none;
+        border-radius: 5px ;
+        box-shadow: 0px 0px 20px 0px grey;
+    }
+}
+
+.whyus{
+    padding:25px;
+    color: var(--light-gray);
+    background-color: var(--light-cyan);
+    p{
+        font-size: 0.9rem;
+        line-height: 25px;
+        width: 200px;
+        color: var(--dark-gray)
+    }
+}

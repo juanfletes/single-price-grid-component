@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
   
   <title>Single Price Grid Component</title>
 </head>
@@ -15,7 +22,7 @@
 
       <section class="join">
         <h1>Join our community</h1>
-        <h2>30-day, hassle-free money back guarantee</h2>
+        <h3>30-day, hassle-free money back guarantee</h3>
         <p>
           Gain access to our full library of tutorials along with expert code reviews. 
           Perfect for any developers who are serious about honing their skills.
@@ -23,15 +30,18 @@
       </section>
 
       <section class="subscription">
-        <h2>Monthly Subscription</h2>
-        <span class="subscription-amount">&dollar;29</span><small>per month</small>
+        <h2>Monthly Subscription</h2>        
+        <div class="subscription-amount">
+          <span>&dollar;29</span>
+          <small>per month</small>
+        </div> 
         <p>Full access for less than &dollar;1 a day</p>
         <button>Sign Up</button>
       </section>
 
       <section class="whyus">
         <h2>Why Us</h2>
-        <pre>
+        <p>
           Tutorials by industry experts
           Peer &amp; expert code review
           Coding exercises
@@ -39,7 +49,7 @@
           Community forum
           Flashcard decks
           New videos every week
-        </pre>
+        </p>
       </section>
     </article>
   </main>
